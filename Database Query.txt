@@ -1,0 +1,4 @@
+Database Query
+
+1. create database named Employee_Management_System
+- create database Employee_Management_System; 
