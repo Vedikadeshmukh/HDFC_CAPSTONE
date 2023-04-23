@@ -11,7 +11,7 @@ public class EmployeeExceptionHandler {
 	
 	@ExceptionHandler(EmployeeNotFound.class)
 	public ResponseEntity<Object> handleEmployeeNotFound(EmployeeNotFound ex){
-		return  new ResponseEntity<>("Eemployee",HttpStatus.INTERNAL_SERVER_ERROR);
+		return  new ResponseEntity<>(ex+"",HttpStatus.INTERNAL_SERVER_ERROR);
 		
 	}
 }
