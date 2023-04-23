@@ -16,11 +16,10 @@ import lombok.Setter;
 
 public class EmployeeDTO {
 
-	@Id
 	@Column(name="employee_id")
-	long id;
+	private long id;
 	@Column(name="employee_name")
-	String name;
+	private String name;
 	@Column(name="employee_date_of_birth")
-	Date DOB;
+	private Date DOB;
 }

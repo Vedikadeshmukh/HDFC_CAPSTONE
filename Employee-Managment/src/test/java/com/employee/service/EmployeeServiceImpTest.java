@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.employee.entity.Employee;
+import com.employee.exception.EmployeeNotFound;
 @SpringBootTest
 class EmployeeServiceImpTest {
 	
@@ -14,7 +15,7 @@ class EmployeeServiceImpTest {
 	IEmployeeService service;
 
 	@Test
-	void testGetEmployeeById() {
+	void testGetEmployeeById() throws EmployeeNotFound {
 		Employee emp =service.getEmployeeById(101);
 		assertEquals(emp.getId(),101);
 	}
