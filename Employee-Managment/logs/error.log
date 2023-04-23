@@ -1,5 +1,5 @@
-2023-04-22 17:28:41,583 ERROR DirectJDKLog:175 - [] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.employee.exception.EmployeeNotFound] with root cause
-com.employee.exception.EmployeeNotFound: null
+2023-04-23 18:29:52,909 ERROR DirectJDKLog:175 - [] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.employee.exception.EmployeeNotFound: Employee not found:1001] with root cause
+com.employee.exception.EmployeeNotFound: Employee not found:1001
 	at com.employee.service.EmployeeServiceImp.lambda$0(EmployeeServiceImp.java:19)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.employee.service.EmployeeServiceImp.getEmployeeById(EmployeeServiceImp.java:19)
@@ -58,8 +58,8 @@ com.employee.exception.EmployeeNotFound: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-04-22 18:15:51,525 ERROR DirectJDKLog:175 - [] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.employee.exception.EmployeeNotFound] with root cause
-com.employee.exception.EmployeeNotFound: null
+2023-04-23 18:31:16,791 ERROR DirectJDKLog:175 - [] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.employee.exception.EmployeeNotFound: Employee not found:1011] with root cause
+com.employee.exception.EmployeeNotFound: Employee not found:1011
 	at com.employee.service.EmployeeServiceImp.lambda$0(EmployeeServiceImp.java:19)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.employee.service.EmployeeServiceImp.getEmployeeById(EmployeeServiceImp.java:19)

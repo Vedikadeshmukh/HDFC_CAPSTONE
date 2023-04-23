@@ -16,7 +16,7 @@ public class EmployeeServiceImp implements IEmployeeService {
 	@Override
 	public Employee getEmployeeById(long id) throws EmployeeNotFound{
 		// TODO Auto-generated method stub
-		return repo.findById(id).orElseThrow(()-> new EmployeeNotFound());
+		return repo.findById(id).orElseThrow(()-> new EmployeeNotFound("Employee not found with:"+id));
 	}
 
 }

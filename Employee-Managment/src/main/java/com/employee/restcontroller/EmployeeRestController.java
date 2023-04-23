@@ -13,6 +13,8 @@ import com.employee.entity.Employee;
 import com.employee.exception.EmployeeNotFound;
 import com.employee.service.IEmployeeService;
 
+import jakarta.validation.Valid;
+
 
 
 @RestController
@@ -24,7 +26,7 @@ public class EmployeeRestController {
 	IEmployeeService service;
 	
 	@GetMapping("/details/{id}")
-	public Employee getEmployeeById(@PathVariable long id) throws EmployeeNotFound{
+	public Employee getEmployeeById(@PathVariable @Valid long id) throws EmployeeNotFound{
 		logger.info("[getEmployeeById] info message");
 		logger.warn("[getEmployeeById] warn message");
 		logger.debug("[getEmployeeById] debug message");
