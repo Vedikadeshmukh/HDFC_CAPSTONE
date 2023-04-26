@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.employee.DTO.EmployeeDTO;
 import com.employee.entity.Employee;
 import com.employee.exception.EmployeeNotFound;
 import com.employee.service.IEmployeeService;
@@ -26,7 +27,7 @@ public class EmployeeRestController {
 	IEmployeeService service;
 	
 	@GetMapping("/details/{id}")
-	public Employee getEmployeeById(@PathVariable @Valid long id) throws EmployeeNotFound{
+	public EmployeeDTO getEmployeeById(@PathVariable @Valid long id) throws EmployeeNotFound{
 		logger.info("[getEmployeeById] info message");
 		logger.warn("[getEmployeeById] warn message");
 		logger.debug("[getEmployeeById] debug message");

@@ -7,12 +7,12 @@ public class Employee {
 
 	private long id;
 	private String name;
-	private Date DOB;
+	private String DOB;
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Employee(long id, String name, Date dOB) {
+	public Employee(long id, String name, String dOB) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -30,10 +30,10 @@ public class Employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getDOB() {
+	public String getDOB() {
 		return DOB;
 	}
-	public void setDOB(Date dOB) {
+	public void setDOB(String dOB) {
 		DOB = dOB;
 	}
 	@Override

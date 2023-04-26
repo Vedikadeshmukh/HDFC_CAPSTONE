@@ -51,6 +51,4 @@ public class Clientconfig {
 				return "localhost".equalsIgnoreCase(s) || "127.0.0.1".equals(s);
 			}
 	    }
-
-
 }

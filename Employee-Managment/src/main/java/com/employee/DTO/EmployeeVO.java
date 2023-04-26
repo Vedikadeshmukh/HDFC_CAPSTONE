@@ -1,11 +1,6 @@
 package com.employee.DTO;
 
-
-
-
-
 import jakarta.persistence.Column;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,8 +11,8 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class EmployeeDTO {
-
+public class EmployeeVO {
+	
 	@Column(name="employee_id")
 	private long id;
 	@Column(name="employee_name")
@@ -25,3 +20,5 @@ public class EmployeeDTO {
 	@Column(name="employee_date_of_birth")
 	private String DOB;
 }
+
+

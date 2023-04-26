@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 
 @ControllerAdvice
-public class EmployeeExceptionHandler {
+public class GlobalException {
 	
 	@ExceptionHandler(EmployeeNotFound.class)
-	public ResponseEntity<Object> handleEmployeeNotFound(EmployeeNotFound ex){
-		return  new ResponseEntity<>(ex+"",HttpStatus.INTERNAL_SERVER_ERROR);
+	public ResponseEntity<Object> handleEmployeeNotFound(){
+		return  new ResponseEntity<>("Invalid Employee Id",HttpStatus.INTERNAL_SERVER_ERROR);
 		
 	}
 }

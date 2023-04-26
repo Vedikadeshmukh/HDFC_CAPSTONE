@@ -19,15 +19,12 @@
 			</Pattern>
 		</encoder>
 
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
 			roll over daily
 			<fileNamePattern>
 				${FOLDER_NAME}/archived/debug.%d{yyyy-MM-dd}.%i.log
 			</fileNamePattern>
-			<timeBasedFileNamingAndTriggeringPolicy
-				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-				<maxFileSize>10MB</maxFileSize>
-			</timeBasedFileNamingAndTriggeringPolicy>
+				<maxFileSize>1MB</maxFileSize>
 		</rollingPolicy>
 
 	</appender>
@@ -40,14 +37,11 @@
 			</Pattern>
 		</encoder>
 
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			roll over daily
-			<fileNamePattern>${FOLDER_NAME}/archived/error.%d{yyyy-MM-dd}.%i.log
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>
+				${FOLDER_NAME}/archived/error.%d{yyyy-MM-dd}.%i.log
 			</fileNamePattern>
-			<timeBasedFileNamingAndTriggeringPolicy
-				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
 				<maxFileSize>1MB</maxFileSize>
-			</timeBasedFileNamingAndTriggeringPolicy>
 		</rollingPolicy>
 
 	</appender>
