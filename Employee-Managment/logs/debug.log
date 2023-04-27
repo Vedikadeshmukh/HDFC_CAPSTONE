@@ -1,4 +1,0 @@
-2023-04-27 10:21:47,115 INFO  EmployeeRestController:31 - [] [getEmployeeById] info message
-2023-04-27 10:21:47,134 WARN  EmployeeRestController:32 - [] [getEmployeeById] warn message
-2023-04-27 10:21:47,135 DEBUG EmployeeRestController:33 - [] [getEmployeeById] debug message
-2023-04-27 10:21:47,135 ERROR EmployeeRestController:34 - [] [getEmployeeById] error message
